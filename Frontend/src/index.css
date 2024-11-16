@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for flex-1 elements */
+.flex-1::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar globally */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;  /* Prevent scrolling */
+}
+
+/* Optionally, if you want to keep the scroll inside a specific container, you can apply this */
+.landing-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* If there are any other containers causing overflow, you can add them here as well */
+.some-other-container {
+    overflow: hidden;
+}
